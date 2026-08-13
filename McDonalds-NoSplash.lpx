@@ -1,6 +1,8 @@
 #!name = 麦当劳-去开屏广告
 #!desc = 去除麦当劳App启动开屏广告
 #!author = BJ
+#!homepage = https://github.com/YANBAOJING/McDonalds-NoSplash
+#!icon = https://raw.githubusercontent.com/YANBAOJING/McDonalds-NoSplash/main/icon.png
 #!system = iOS,iPadOS
 #!system_version = 15
 #!loon_version = 3.5.1(978)
@@ -20,9 +22,9 @@ dns-server =
 [Rewrite]
 
 [Host]
-api2.mcd.cn
 
 [Script]
-^https?:\/\/api2\.mcd\.cn\/bff\/portal\/home\/splash(?:\?.*)?$ requires-body=true script-path = https://raw.githubusercontent.com/YANBAOJING/McDonalds-NoSplash/main/mcd_nosplash.js
+http-response ^https?:\/\/api2\.mcd\.cn\/bff\/portal\/home\/splash(?:\?.*)?$ script-path=https://raw.githubusercontent.com/YANBAOJING/McDonalds-NoSplash/main/mcd_nosplash.js,requires-body=true,tag=去开屏广告
 
 [Mitm]
+hostname = api2.mcd.cn
