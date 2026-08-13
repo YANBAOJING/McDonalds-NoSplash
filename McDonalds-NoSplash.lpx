@@ -2,7 +2,7 @@
 #!desc = 去除麦当劳App启动开屏广告
 #!author = BJ
 #!homepage = https://github.com/YANBAOJING/McDonalds-NoSplash
-#!icon = https://raw.githubusercontent.com/YANBAOJING/McDonalds-NoSplash/main/icon.png
+#!icon = https://raw.githubusercontent.com/YANBAOJING/McDonalds-NoSplash/refs/heads/main/IMG_2751.png
 #!system = iOS,iPadOS
 #!system_version = 15
 #!loon_version = 3.5.1(978)
